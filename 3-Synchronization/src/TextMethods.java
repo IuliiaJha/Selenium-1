@@ -9,7 +9,7 @@ public class TextMethods {
 		System.setProperty("webdriver.chrome.driver","/Users/orcuncanlilar/Selenium/chromedriver");
 		WebDriver chromeDriver = new ChromeDriver();
 		chromeDriver.manage().window().maximize();
-		
+		 
 		chromeDriver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		String text = chromeDriver.findElement(By.cssSelector(".floatL.bold")).getText();
 		System.out.println(text); //Pasword
