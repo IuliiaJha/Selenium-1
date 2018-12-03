@@ -7,7 +7,8 @@ import org.openqa.selenium.interactions.Actions;
 public class Task11 {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","/Users/orcuncanlilar/Selenium/chromedriver");		ChromeDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver","/Users/orcuncanlilar/Selenium/chromedriver");		
+		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.johnlewis.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
