@@ -25,6 +25,12 @@ public class ScrollDown {
 		
 		//scroll to bottom
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+		
+		
+		//http://testng.org/doc/eclipse.html
+		//http://beust.com/eclipse
+		
+		
 	
 		
 
