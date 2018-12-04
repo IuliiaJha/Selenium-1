@@ -1,23 +1,18 @@
-import javax.security.sasl.SaslException;
-
-import org.testng.SkipException;
+package testcases;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class AppBeforeSuitAfterSuit {
+public class AppBeforeMethodAfterMethod {
 	
-	@BeforeSuite
+	@BeforeMethod
 	public void beforeMethod() {
-		System.out.println("---Before Suit---");
+		System.out.println("---Before Method---");
 	}
 	
-	@AfterSuite
-	public void afterSuit() {
-		System.out.println("---After Suit---");
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("---After Method---");
 	}
 	
 	@Test(priority=1)
@@ -29,13 +24,9 @@ public class AppBeforeSuitAfterSuit {
 	@Test(priority=2)
 	public void PasswordChangeTest() {
 		//webdriver
-		
 		System.out.println("Changing Passsword");
-		//throw new SkipException("reason");
-		
 	}
 	
-	@Ignore
 	@Test(priority=3)
 	public void LogoutTest() {
 		System.out.println("Logout");
